@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+  <!-- Bootstrap Link -->
+  <link rel="stylesheet" href="bootstrap.min.css" />
+  <link rel="stylesheet" href="bootstrap-theme.min.css">
+  <script src="bootstrap.min.js"></script>
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+  <title>Form - Contact</title>
+</head>
+<body>
+    <div class="container">
+        <h2 class="text-center">Contact Information</h2>
+        <form id="form">
+            <div class="form-group">
+                <label for="firstName">First Name <b class="text-danger">*</b></label>
+                <input type="text" class="form-control input" id="firstName" name="firstName" placeholder="Your answer">
+                <div class="errors">
+                    <p id="firstNameErr"></p>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="lastName">Last Name <b class="text-danger">*</b></label>
+                <input type="text" class="form-control input" id="lastName" name="lastName" placeholder="Your answer">
+                <div class="errors">
+                    <p id="lastNameErr"></p>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="email">Email <b class="text-danger">*</b></label>
+                <input type="email" class="form-control input" id="email" name="email" placeholder="Your answer">
+                <div class="errors">
+                    <p id="emailErr"></p>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="mobile">Phone Number <b class="text-danger">*</b></label>
+                <input type="number" class="form-control input" id="mobile" name="mobile" placeholder="Your answer">
+                <div class="errors">
+                    <p id="mobileErr"></p>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="date">DOB <b class="text-danger">*</b></label>
+                <input type="date" class="form-control input" id="date">
+                <div class="errors">
+                    <p id="dateErr"></p>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="job">Job Title <b class="text-danger">*</b></label>
+                <select name="job" id="job" class="form-control input-select">
+                    <option value="" disabled selected hidden>Choose</option>
+                    <option value="manager">Manager</option>
+                    <option value="lead">Lead</option>
+                    <option value="senior engineer">Senior Engineer</option>
+                </select>
+                <div class="errors">
+                    <p id="jobErr"></p>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="company">Company <b class="text-danger">*</b></label>
+                <input type="text" class="form-control input" id="company" name="company" placeholder="Your answer">
+                <div class="errors">
+                    <p id="companyErr"></p>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="sector">Sector <b class="text-danger">*</b></label>
+                <select name="sector" id="sector" class="form-control input-select">
+                    <option value="" disabled selected hidden>Choose</option>
+                    <option value="Information technology">Information Technology</option>
+                    <option value="Financial">Financial</option>
+                    <option value="Service">Service</option>
+                    <option value="Health">Health</option>
+                </select>
+                <div class="errors">
+                    <p id="sectorErr"></p>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="checkbox">Please select the content you would like us to tailor for you <b class="text-danger">*</b></label><br>
+                <input type="checkbox" name="checker" id="newsLetter" value="Newsletter">
+                <label for="newsLetter" class="check">Newsletter</label><br>
+                <input type="checkbox" name="checker" id="bottomLine" value="Bottomline">
+                <label for="bottomLine" class="check">Bottomline</label><br>
+                <input type="checkbox" name="checker" id="weedendReads" value="Weekend Reads">
+                <label for="weedendReads" class="check">Weekend Reads</label><br>
+                <input type="checkbox" name="checker" id="reels" value="Reels">
+                <label for="reels" class="check">Reels</label><br>
+                <input type="checkbox" name="checker" id="postcards" value="Postcards">
+                <label for="postcards" class="check">Postcards</label><br>
+                <div class="errors">
+                    <p id="checkErr"></p>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="radio">We use and store your data to customise your browsing experience and content consumption. <b class="text-danger">*</b></label><br>
+                <input type="radio" name="radio" id="radio1" value="You can store and use my data">
+                <label for="radio1" class="check">You can store and use my data</label><br>
+                <input type="radio" name="radio" id="radio2" value="I do not want to share my data">
+                <label for="radio2" class="check">I do not want to share my data</label>
+                <div class="errors">
+                    <p id="radioErr"></p>
+                </div>
+            </div>
+            <button type="submit" class="btn" id="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>

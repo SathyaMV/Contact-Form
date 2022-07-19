@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&family=Poppins&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.text-danger {
+  color: #ff0000;
+}
+
+.container {
+  padding-bottom: 1rem;
+  width: 70%;
+  /* padding-left: 5rem;
+  padding-right: 5rem; */
+}
+
+.input {
+  border: 0px;
+  border-bottom: 1px solid #808080;
+  padding-left: 0;
+  box-shadow: none;
+  border-radius: 0;
+}
+
+.input-select {
+  padding-left: 0;
+  border: 1px solid #808080;
+  border-radius: 0;
+}
+
+.form-group {
+  box-shadow: 0 0 5px #808080;
+  padding: 2rem;
+}
+
+.check {
+  font-weight: normal;
+}
+
+.radio {
+  font-weight: normal;
+}
+
+.btn {
+  background-color: #000;
+  color: #fff;
+  border: 0;
+  border-radius: 0;
+}
+
+.btn:focus, .btn:active {
+  color: #fff;
+}
+
+.input:focus {
+  box-shadow: none;
+}
+
+.errors {
+  color: #ff0000;
+}
+
+@media screen and (max-width: 786px) {
+    .container{
+        width: 100%;
+    }
+}
